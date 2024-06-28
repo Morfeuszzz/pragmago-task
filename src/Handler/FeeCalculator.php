@@ -8,13 +8,11 @@ use PragmaGoTech\Interview\Model\LoanProposal;
 use PragmaGoTech\Interview\Handler\Interfaces\InterpolatorInterface;
 use PragmaGoTech\Interview\Handler\Interfaces\FeeCalculatorInterface;
 
-final class FeeCalculator implements FeeCalculatorInterface
+final readonly class FeeCalculator implements FeeCalculatorInterface
 {
-    private InterpolatorInterface $interpolator;
-
-    public function __construct(InterpolatorInterface $interpolator)
-    {
-        $this->interpolator = $interpolator;
+    public function __construct(
+        private InterpolatorInterface $interpolator
+    ) {
     }
 
     public function calculate(LoanProposal $application): float

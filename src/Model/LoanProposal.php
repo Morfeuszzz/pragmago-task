@@ -8,16 +8,12 @@ namespace PragmaGoTech\Interview\Model;
  * A cut down version of a loan application containing
  * only the required properties for this test.
  */
-class LoanProposal
+final readonly class LoanProposal
 {
-    private int $term;
-
-    private float $amount;
-
-    public function __construct(int $term, float $amount)
-    {
-        $this->term = $term;
-        $this->amount = $amount;
+    public function __construct(
+        private int $term,
+        private float $amount
+    ) {
     }
 
     /**

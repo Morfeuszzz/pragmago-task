@@ -8,12 +8,11 @@ final class Bound
 {
     private array $breakpoints;
 
-    private float $amount;
-
-    public function __construct(int $term, float $amount)
-    {
+    public function __construct(
+        int $term,
+        private readonly float $amount
+    ) {
         $this->breakpoints = FeeBreakpoint::getBreakpoints($term);
-        $this->amount = $amount;
     }
 
     public function findBounds(): array

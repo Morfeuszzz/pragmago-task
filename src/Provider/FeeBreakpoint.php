@@ -4,7 +4,7 @@ namespace PragmaGoTech\Interview\Provider;
 
 final class FeeBreakpoint
 {
-    private const TERM_12_BREAKPOINTS = [
+    private const array TERM_12_BREAKPOINTS = [
         1000 => 50,
         2000 => 90,
         3000 => 90,
@@ -27,7 +27,7 @@ final class FeeBreakpoint
         20000 => 400
     ];
 
-    private const TERM_24_BREAKPOINTS = [
+    private const array TERM_24_BREAKPOINTS = [
         1000 => 70,
         2000 => 100,
         3000 => 120,

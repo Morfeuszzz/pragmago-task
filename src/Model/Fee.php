@@ -2,16 +2,12 @@
 
 namespace PragmaGoTech\Interview\Model;
 
-final class Fee
+final readonly class Fee
 {
-    private float $fee;
-
-    private float $amount;
-
-    public function __construct(float $fee, float $amount)
-    {
-        $this->fee = $fee;
-        $this->amount = $amount;
+    public function __construct(
+        private float $fee,
+        private float $amount
+    ) {
     }
 
     public function roundUp(): self
