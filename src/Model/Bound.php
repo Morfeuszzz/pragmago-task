@@ -4,13 +4,13 @@ namespace PragmaGoTech\Interview\Model;
 
 use PragmaGoTech\Interview\Provider\FeeBreakpoint;
 
-final class Bound
+final readonly class Bound
 {
     private array $breakpoints;
 
     public function __construct(
         int $term,
-        private readonly float $amount
+        private float $amount
     ) {
         $this->breakpoints = FeeBreakpoint::getBreakpoints($term);
     }
