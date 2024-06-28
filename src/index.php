@@ -1,6 +1,7 @@
 <?php
 
 use PragmaGoTech\Interview\Model\LoanProposal;
+use PragmaGoTech\Interview\Handler\FeeCalculator;
 
 $calculator = new FeeCalculator();
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PragmaGoTech\Interview\Interfaces;
+namespace PragmaGoTech\Interview\Handler\Interfaces;
 
 use PragmaGoTech\Interview\Model\LoanProposal;
 
