@@ -2,9 +2,9 @@
 
 namespace PragmaGoTech\Interview;
 
-use PragmaGoTech\Interview\Model\LoanProposal;
-use PragmaGoTech\Interview\Handler\FeeCalculator;
-use PragmaGoTech\Interview\Handler\LinearInterpolator;
+use PragmaGoTech\Interview\Domain\Model\LoanProposal;
+use PragmaGoTech\Interview\Infrastructure\Service\Handler\FeeCalculator;
+use PragmaGoTech\Interview\Infrastructure\Service\Handler\LinearInterpolator;
 
 $linearInterpolator = new LinearInterpolator();
 $calculator = new FeeCalculator($linearInterpolator);

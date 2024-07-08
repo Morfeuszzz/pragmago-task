@@ -1,9 +1,9 @@
 <?php
 
-namespace tests\Provider;
+namespace tests\Infrastructure\Service\Provider;
 
 use PHPUnit\Framework\TestCase;
-use PragmaGoTech\Interview\Provider\FeeBreakpoint;
+use PragmaGoTech\Interview\Infrastructure\Service\Provider\FeeBreakpoint;
 
 final class FeeBreakpointTest extends TestCase
 {

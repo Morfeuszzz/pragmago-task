@@ -1,9 +1,9 @@
 <?php
 
-namespace tests\Model;
+namespace tests\Domain\ValueObject;
 
 use PHPUnit\Framework\TestCase;
-use PragmaGoTech\Interview\ValueObject\Fee;
+use PragmaGoTech\Interview\Domain\ValueObject\Fee;
 
 final class FeeTest extends TestCase
 {

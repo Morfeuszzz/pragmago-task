@@ -1,12 +1,12 @@
 <?php
 
-namespace PragmaGoTech\Interview\Handler;
+namespace PragmaGoTech\Interview\Infrastructure\Service\Handler;
 
-use PragmaGoTech\Interview\Model\Bound;
-use PragmaGoTech\Interview\ValueObject\Fee;
-use PragmaGoTech\Interview\Model\LoanProposal;
-use PragmaGoTech\Interview\Handler\Interfaces\InterpolatorInterface;
-use PragmaGoTech\Interview\Handler\Interfaces\FeeCalculatorInterface;
+use PragmaGoTech\Interview\Domain\ValueObject\Fee;
+use PragmaGoTech\Interview\Domain\ValueObject\Bound;
+use PragmaGoTech\Interview\Domain\Model\LoanProposal;
+use PragmaGoTech\Interview\Infrastructure\Service\Handler\Interfaces\InterpolatorInterface;
+use PragmaGoTech\Interview\Infrastructure\Service\Handler\Interfaces\FeeCalculatorInterface;
 
 final readonly class FeeCalculator implements FeeCalculatorInterface
 {

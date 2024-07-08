@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaGoTech\Interview\Handler\Interfaces;
+namespace PragmaGoTech\Interview\Infrastructure\Service\Handler\Interfaces;
 
 interface InterpolatorInterface
 {

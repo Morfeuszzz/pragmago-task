@@ -1,8 +1,8 @@
 <?php
 
-namespace PragmaGoTech\Interview\Model;
+namespace PragmaGoTech\Interview\Domain\ValueObject;
 
-use PragmaGoTech\Interview\Provider\FeeBreakpoint;
+use PragmaGoTech\Interview\Infrastructure\Service\Provider\FeeBreakpoint;
 
 final readonly class Bound
 {

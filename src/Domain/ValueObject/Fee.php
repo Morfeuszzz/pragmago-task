@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaGoTech\Interview\ValueObject;
+namespace PragmaGoTech\Interview\Domain\ValueObject;
 
 final readonly class Fee
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PragmaGoTech\Interview\Model;
+namespace PragmaGoTech\Interview\Domain\Model;
 
 /**
  * A cut down version of a loan application containing

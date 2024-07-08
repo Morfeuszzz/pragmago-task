@@ -1,8 +1,8 @@
 <?php
 
-namespace PragmaGoTech\Interview\Handler;
+namespace PragmaGoTech\Interview\Infrastructure\Service\Handler;
 
-use PragmaGoTech\Interview\Handler\Interfaces\InterpolatorInterface;
+use PragmaGoTech\Interview\Infrastructure\Service\Handler\Interfaces\InterpolatorInterface;
 
 final class LinearInterpolator implements InterpolatorInterface
 {

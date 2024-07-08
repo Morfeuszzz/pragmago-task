@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaGoTech\Interview\Provider;
+namespace PragmaGoTech\Interview\Infrastructure\Service\Provider;
 
 final class FeeBreakpoint
 {
