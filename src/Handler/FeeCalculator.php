@@ -2,8 +2,8 @@
 
 namespace PragmaGoTech\Interview\Handler;
 
-use PragmaGoTech\Interview\Model\Fee;
 use PragmaGoTech\Interview\Model\Bound;
+use PragmaGoTech\Interview\ValueObject\Fee;
 use PragmaGoTech\Interview\Model\LoanProposal;
 use PragmaGoTech\Interview\Handler\Interfaces\InterpolatorInterface;
 use PragmaGoTech\Interview\Handler\Interfaces\FeeCalculatorInterface;

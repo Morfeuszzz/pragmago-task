@@ -3,7 +3,7 @@
 namespace tests\Model;
 
 use PHPUnit\Framework\TestCase;
-use PragmaGoTech\Interview\Model\Fee;
+use PragmaGoTech\Interview\ValueObject\Fee;
 
 final class FeeTest extends TestCase
 {
