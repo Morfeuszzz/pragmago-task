@@ -1,6 +1,6 @@
 <?php
 
-namespace tests\Domain\ValueObject;
+namespace unit\Domain\ValueObject;
 
 use PHPUnit\Framework\TestCase;
 use PragmaGoTech\Interview\Domain\ValueObject\Fee;

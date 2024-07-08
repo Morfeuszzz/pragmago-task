@@ -1,6 +1,6 @@
 <?php
 
-namespace tests\Infrastructure\Service\Provider;
+namespace unit\Infrastructure\Service\Provider;
 
 use PHPUnit\Framework\TestCase;
 use PragmaGoTech\Interview\Infrastructure\Service\Provider\FeeBreakpoint;
