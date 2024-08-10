@@ -44,6 +44,13 @@ phpstan_static_analysis:
   dependencies:
     - common_build
 
+unit_tests:
+  stage: test
+  script:
+    - ./vendor/bin/phpunit tests/unit
+  dependencies:
+    - common_build
+
 selenium_test_ui:
   stage: test_ui
   before_script:
