@@ -1,0 +1,55 @@
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_TAG
+
+stages:
+  - build
+  - test
+  - test_ui
+
+image: php:8.3 # oczywiscie tutaj obraz projektu
+
+common_build:
+  stage: build
+  script:
+    - php composer.phar install --no-interaction --optimize-autoloader
+  artifacts:
+    when: on_success
+    expire_in: 1 hrs 50 min
+    paths:
+      - bin/
+      - vendor/
+
+lint:
+  stage: test
+  script:
+    - php bin/console lint:yaml config
+    - php bin/console lint:twig templates
+    - php bin/console lint:container
+  dependencies:
+    - common_build
+
+rector_code_syntax:
+  stage: test
+  script:
+    - php composer.phar rector-dry-run
+  dependencies:
+    - common_build
+
+phpstan_static_analysis:
+  stage: test
+  script:
+    - php composer.phar phpstan
+  dependencies:
+    - common_build
+
+selenium_test_ui:
+  stage: test_ui
+  before_script:
+    - npm ci
+    - npm run dev
+  script:
+    - tests/selenium.sh
+  dependencies:
+    - common_build
