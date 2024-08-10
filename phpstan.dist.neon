@@ -1,0 +1,13 @@
+includes:
+    - phpstan-baseline.php
+
+parameters:
+    phpVersion: 80300
+    level: 6
+    paths:
+        - src
+        - tests
+    fileExtensions:
+        - php
+    excludePaths:
+        - src/Kernel.php
