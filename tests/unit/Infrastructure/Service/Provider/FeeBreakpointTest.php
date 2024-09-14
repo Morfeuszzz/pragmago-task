@@ -7,7 +7,10 @@ use PragmaGoTech\Interview\Infrastructure\Service\Provider\FeeBreakpoint;
 
 final class FeeBreakpointTest extends TestCase
 {
+    /** @var array<int, int> [loanAmount, fee] */
     private array $term24Breakpoints;
+
+    /** @var array<int, int> [loanAmount, fee] */
     private array $term12Breakpoints;
 
     public function testFee12Breakpoints(): void

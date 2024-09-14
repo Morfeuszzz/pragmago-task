@@ -4,6 +4,10 @@ namespace PragmaGoTech\Interview\Infrastructure\Service\Handler;
 
 final class LinearInterpolator implements Interpolator
 {
+    /**
+     * @param array<int, int> $lowerBound [loanAmount, fee]
+     * @param array<int, int> $upperBound [loanAmount, fee]
+     */
     public function interpolate(float $value, array $lowerBound, array $upperBound): float
     {
         [$x0, $y0] = $lowerBound;

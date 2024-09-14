@@ -50,6 +50,9 @@ final class FeeBreakpoint
         20000 => 800
     ];
 
+    /**
+     * @return array<int, int> [loanAmount, fee]
+     */
     public static function getBreakpoints(int $term): array
     {
         switch ($term) {
