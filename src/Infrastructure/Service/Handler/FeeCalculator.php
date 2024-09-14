@@ -5,15 +5,12 @@ namespace PragmaGoTech\Interview\Infrastructure\Service\Handler;
 use PragmaGoTech\Interview\Domain\ValueObject\Fee;
 use PragmaGoTech\Interview\Domain\ValueObject\Bound;
 use PragmaGoTech\Interview\Domain\Model\LoanProposal;
-use PragmaGoTech\Interview\Infrastructure\Service\Handler\Interfaces\InterpolatorInterface;
-use PragmaGoTech\Interview\Infrastructure\Service\Handler\Interfaces\FeeCalculatorInterface;
 
-final readonly class FeeCalculator implements FeeCalculatorInterface
+final readonly class FeeCalculator implements Calculator
 {
     public function __construct(
-        private InterpolatorInterface $interpolator
-    ) {
-    }
+        private Interpolator $interpolator,
+    ) {}
 
     public function calculate(LoanProposal $application): float
     {

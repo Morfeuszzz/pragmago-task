@@ -1,12 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
-namespace PragmaGoTech\Interview\Infrastructure\Service\Handler\Interfaces;
+namespace PragmaGoTech\Interview\Infrastructure\Service\Handler;
 
 use PragmaGoTech\Interview\Domain\Model\LoanProposal;
 
-interface FeeCalculatorInterface
+interface Calculator
 {
     /**
      * @return float The calculated total fee.

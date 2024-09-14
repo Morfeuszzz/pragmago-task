@@ -2,9 +2,7 @@
 
 namespace PragmaGoTech\Interview\Infrastructure\Service\Handler;
 
-use PragmaGoTech\Interview\Infrastructure\Service\Handler\Interfaces\InterpolatorInterface;
-
-final class LinearInterpolator implements InterpolatorInterface
+final class LinearInterpolator implements Interpolator
 {
     public function interpolate(float $value, array $lowerBound, array $upperBound): float
     {
