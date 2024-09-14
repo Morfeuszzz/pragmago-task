@@ -3,10 +3,9 @@
 .gitignore
 .dockerignore
 .gitlab-ci.yml
+.php-cs-fixer.cache
+tools/php-cs-fixer/vendor
 vendor
-tests
 compose.yaml
 Dockerfile
-phpstan-baseline.php
-phpstan.dist.neon
 README.md

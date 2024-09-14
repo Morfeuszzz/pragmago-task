@@ -10,7 +10,8 @@ final readonly class FeeCalculator implements Calculator
 {
     public function __construct(
         private Interpolator $interpolator,
-    ) {}
+    ) {
+    }
 
     public function calculate(LoanProposal $application): float
     {

@@ -27,15 +27,15 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	// identifier: missingType.iterableValue
-	'message' => '#^Method PragmaGoTech\\\\Interview\\\\Infrastructure\\\\Service\\\\Handler\\\\Interfaces\\\\InterpolatorInterface\\:\\:interpolate\\(\\) has parameter \\$lowerBound with no value type specified in iterable type array\\.$#',
+	'message' => '#^Method PragmaGoTech\\\\Interview\\\\Infrastructure\\\\Service\\\\Handler\\\\Interpolator\\:\\:interpolate\\(\\) has parameter \\$lowerBound with no value type specified in iterable type array\\.$#',
 	'count' => 1,
-	'path' => __DIR__ . '/src/Infrastructure/Service/Handler/Interfaces/InterpolatorInterface.php',
+	'path' => __DIR__ . '/src/Infrastructure/Service/Handler/Interpolator.php',
 ];
 $ignoreErrors[] = [
 	// identifier: missingType.iterableValue
-	'message' => '#^Method PragmaGoTech\\\\Interview\\\\Infrastructure\\\\Service\\\\Handler\\\\Interfaces\\\\InterpolatorInterface\\:\\:interpolate\\(\\) has parameter \\$upperBound with no value type specified in iterable type array\\.$#',
+	'message' => '#^Method PragmaGoTech\\\\Interview\\\\Infrastructure\\\\Service\\\\Handler\\\\Interpolator\\:\\:interpolate\\(\\) has parameter \\$upperBound with no value type specified in iterable type array\\.$#',
 	'count' => 1,
-	'path' => __DIR__ . '/src/Infrastructure/Service/Handler/Interfaces/InterpolatorInterface.php',
+	'path' => __DIR__ . '/src/Infrastructure/Service/Handler/Interpolator.php',
 ];
 $ignoreErrors[] = [
 	// identifier: missingType.iterableValue
