@@ -9,5 +9,3 @@ parameters:
         - tests
     fileExtensions:
         - php
-    excludePaths:
-        - src/Kernel.php
